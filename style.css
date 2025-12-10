@@ -1,0 +1,84 @@
+/* style.css */
+:root {
+    --bg: #eef;
+    --card: #fff;
+    --primary: #1da1f2;
+    --primary-dark: #0c85d0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--bg);
+}
+
+/* Stack top-bar then container and center horizontally */
+body {
+    display: flex;
+    flex-direction: column;    /* stack vertically */
+    align-items: center;       /* center children horizontally */
+    min-height: 100vh;
+}
+
+/* Full-width top bar so the button sits at the top-left */
+.top-bar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: flex-start; /* keep button left */
+    align-items: center;
+}
+
+/* Home button style */
+.home-button {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.06);
+}
+.home-button:hover { background: var(--primary-dark); }
+
+/* Card */
+.container {
+    background: var(--card);
+    width: 420px;
+    max-width: calc(100% - 40px);
+    padding: 28px;
+    border-radius: 10px;
+    margin-top: 18px;
+    box-shadow: 0 6px 18px rgba(20,30,50,0.06);
+}
+
+/* Inputs / button */
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover { background: var(--primary-dark); }
+
+.signup-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--primary);
+    text-decoration: none;
+}
