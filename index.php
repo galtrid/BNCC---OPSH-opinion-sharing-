@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once 'install.php';
 require_once 'config/db.php';
 require_once 'controllers/AuthController.php';
 require_once 'controllers/TweetController.php';

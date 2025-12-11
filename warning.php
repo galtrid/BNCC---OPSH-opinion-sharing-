@@ -7,7 +7,7 @@
 </head>
 <body>
     <a> you need to login before sharing </a>
-
+    <br>
     <a href="index.php?page=login" class="home-button">
     Go to login Feed
 </a>
